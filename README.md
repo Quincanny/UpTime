@@ -1,4 +1,4 @@
-## UpTime - A Python-based Application log for Windows
+## UpTime - An application log for Windows
 <img src="github/app.png" width="320" height="120">
 
 UpTime is an open-source python app (and static site) that logs how long you spend on different apps, based on your active window. You can view how much time you spend on each app in an HTML file, using log information that is updated every minute, with graphs, and precise times for each app, on each day it logs.
