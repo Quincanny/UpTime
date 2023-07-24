@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>UpTime Log</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href='SourceSansPro.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="everything">
+        <div id="fixedDate">
+            Selected date: <span class="selectedDate">YYYY:MM:DD</span>
+        </div>
+        <div>
+            <div>
+                <h1>UpTime v0.1</h1>
+            </div>
+            <button class="arrows" id="previousDay" onclick="arrows(-1)" title="Previous Day">←</button>
+            Change date: 
+            <input id="datepicker" type="date" min="2023-07-12" max="2023-07-17">
+            <button id="check" onclick="changeDate()">Check</button>
+            <button class="arrows" id="nextDay" onclick="arrows(1)" title="Next Day">→</button>
+        </div>
+        <div id="errorReport"></div>
+        <div class="section">
+            <h2>Usage graph by app</h2>
+            <canvas id="stackedChart"></canvas>
+            <div class="disclaimer">For the sake of space, this graph only shows apps on-screen for more than 60 seconds in a single hour. To see all apps, check <a href="#totalByApp">Total time by app</a></div>
+            <hr>
+            <table>
+                <tr>
+                    <td><canvas id="pieChart"></canvas></td>
+                    <td id="statistics">
+                        <h1>Date: <span class="selectedDate">YYYY:MM:DD</span></h1>
+                        <h2>
+                            ☼ Screen time this day: <span id="screenTime" style="text-decoration: underline;">07:23:32</span>
+                        </h2>
+                        Most used app: <span id="mostUsedApp">appName (totalApp)</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <h2 id="totalByApp">Total time by app</h2>
+            <ul class="applist">
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div>UpTime, 2023</div>
+        <div class="bottomtext">Made by Quincanny, for CS50.</div>
+    </div>
+    <script src="chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

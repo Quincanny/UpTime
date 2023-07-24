@@ -1,0 +1,149 @@
+a {
+    color: rgb(255, 255, 0);
+}
+body {
+    font-family: 'Source Sans Pro';
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#everything {
+    background-color: rgb(18, 18, 18);
+    height: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px black;
+}
+
+#stackedChart {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.7));
+    border-bottom: 1px dashed white;
+}
+
+.section {
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 8px black;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(129, 129, 129, 0.521);
+    color: white;
+}
+
+.bottomtext {
+    font-size: 65%
+}
+.container {
+    padding: 15px;
+}
+
+#fixedDate {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    right: 20%;
+    bottom: 94%;
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 10;
+    font-size: 120%;
+}
+#fixedDate > span {
+    text-decoration: underline;
+}
+
+.applist {
+    padding: 10px;
+}
+
+.appname {
+    text-align: left;
+    flex: 1;
+}
+
+.apptime {
+    text-align: right;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    text-align: left;
+    background-color: rgba(94, 94, 94, 0.5);
+    padding: 10px 20px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.disclaimer {
+    font-size: 80%;
+    font-style: italic;
+    padding: 5px;
+}
+
+#datepicker {
+    font-family: Source Sans Pro;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+#check {
+    color: black;
+    font-family: Source Sans Pro;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+#check:hover {
+    transition: .3s;
+    background-color: rgb(196, 196, 196);
+    border: 2px solid rgb(196, 196, 196);
+}
+#check:active {
+    background-color: rgb(141, 141, 141);
+    transition: .1s;
+    border: 2px solid rgb(141, 141, 141);
+} 
+
+#statistics {
+    padding: 15px;
+    text-align: left;
+}
+
+#errorReport {
+    color: red;
+    height: 20px;
+}
+
+.arrows {
+    margin-right: 25px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    transition: .3s;
+}
+.arrows:hover {
+    background-color: rgb(30, 30, 30);
+    transition: .3s;
+}
+.arrows:active {
+    background-color: rgb(75, 75, 75);
+    transition: .1s;
+}
+
+#nextDay {
+    margin-left: 25px;
+}
+#previousDay {
+    margin-right: 25px;
+}
